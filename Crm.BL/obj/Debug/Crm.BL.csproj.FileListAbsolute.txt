@@ -1,0 +1,13 @@
+D:\Projects\Working\CrmModelShop\Crm.BL\bin\Debug\Crm.BL.exe.config
+D:\Projects\Working\CrmModelShop\Crm.BL\bin\Debug\Crm.BL.exe
+D:\Projects\Working\CrmModelShop\Crm.BL\bin\Debug\Crm.BL.pdb
+D:\Projects\Working\CrmModelShop\Crm.BL\bin\Debug\EntityFramework.dll
+D:\Projects\Working\CrmModelShop\Crm.BL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Working\CrmModelShop\Crm.BL\bin\Debug\EntityFramework.xml
+D:\Projects\Working\CrmModelShop\Crm.BL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Working\CrmModelShop\Crm.BL\obj\Debug\Crm.BL.Migrations.Initial.resources
+D:\Projects\Working\CrmModelShop\Crm.BL\obj\Debug\Crm.BL.csproj.GenerateResource.cache
+D:\Projects\Working\CrmModelShop\Crm.BL\obj\Debug\Crm.BL.csproj.CoreCompileInputs.cache
+D:\Projects\Working\CrmModelShop\Crm.BL\obj\Debug\Crm.BL.csproj.CopyComplete
+D:\Projects\Working\CrmModelShop\Crm.BL\obj\Debug\Crm.BL.exe
+D:\Projects\Working\CrmModelShop\Crm.BL\obj\Debug\Crm.BL.pdb

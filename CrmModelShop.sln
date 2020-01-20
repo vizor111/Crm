@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.BL", "Crm.BL\Crm.BL.csproj", "{695DA700-33F5-4002-8C48-AD9D2A1B22B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.UI", "Crm.UI\Crm.UI.csproj", "{3D6676C2-28AC-403B-8A5B-A71DB507C60A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{695DA700-33F5-4002-8C48-AD9D2A1B22B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695DA700-33F5-4002-8C48-AD9D2A1B22B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695DA700-33F5-4002-8C48-AD9D2A1B22B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695DA700-33F5-4002-8C48-AD9D2A1B22B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6676C2-28AC-403B-8A5B-A71DB507C60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6676C2-28AC-403B-8A5B-A71DB507C60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6676C2-28AC-403B-8A5B-A71DB507C60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6676C2-28AC-403B-8A5B-A71DB507C60A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5CEE67A-E5F2-46CC-BE70-5DADEF7C832D}
+	EndGlobalSection
+EndGlobal
