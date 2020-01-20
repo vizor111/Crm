@@ -1,12 +1,5 @@
 ﻿using Crm.BL.EF;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Crm.BL.Model;
 
@@ -59,9 +52,41 @@ namespace Crm.UI
 
             customerForm.ShowDialog();
 
-            _db.Customers.Add(customerForm.Customer);
 
-            _db.SaveChanges();
+            if (customerForm.DialogResult == DialogResult.OK)
+            {
+                _db.Customers.Add(customerForm.Customer);
+
+                _db.SaveChanges();
+            }
+        }
+
+        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var sellerForm = new SellerForm();
+
+            sellerForm.ShowDialog();
+
+            if (sellerForm.DialogResult == DialogResult.OK)
+            {
+                _db.Sellers.Add(sellerForm.Seller);
+
+                _db.SaveChanges();
+            }
+        }
+
+        private void addToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            var productForm = new ProductForm();
+
+            productForm.ShowDialog();
+
+            if (productForm.DialogResult == DialogResult.OK)
+            {
+                _db.Products.Add(productForm.Product);
+
+                _db.SaveChanges();
+            }
         }
     }
 }

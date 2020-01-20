@@ -31,6 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.inp_name = new System.Windows.Forms.TextBox();
             this.btn_save = new System.Windows.Forms.Button();
+            this.lbl_price = new System.Windows.Forms.Label();
+            this.lbl_count = new System.Windows.Forms.Label();
+            this.num_price = new System.Windows.Forms.NumericUpDown();
+            this.num_count = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.num_price)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_count)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,17 +67,62 @@
             this.btn_save.UseVisualStyleBackColor = true;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
+            // lbl_price
+            // 
+            this.lbl_price.AutoSize = true;
+            this.lbl_price.Location = new System.Drawing.Point(12, 60);
+            this.lbl_price.Name = "lbl_price";
+            this.lbl_price.Size = new System.Drawing.Size(59, 13);
+            this.lbl_price.TabIndex = 3;
+            this.lbl_price.Text = "Enter Price";
+            // 
+            // lbl_count
+            // 
+            this.lbl_count.AutoSize = true;
+            this.lbl_count.Location = new System.Drawing.Point(12, 105);
+            this.lbl_count.Name = "lbl_count";
+            this.lbl_count.Size = new System.Drawing.Size(63, 13);
+            this.lbl_count.TabIndex = 5;
+            this.lbl_count.Text = "Enter Count";
+            // 
+            // num_price
+            // 
+            this.num_price.DecimalPlaces = 2;
+            this.num_price.Location = new System.Drawing.Point(88, 60);
+            this.num_price.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.num_price.Name = "num_price";
+            this.num_price.Size = new System.Drawing.Size(120, 20);
+            this.num_price.TabIndex = 7;
+            this.num_price.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // num_count
+            // 
+            this.num_count.Location = new System.Drawing.Point(88, 103);
+            this.num_count.Name = "num_count";
+            this.num_count.Size = new System.Drawing.Size(120, 20);
+            this.num_count.TabIndex = 8;
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 363);
+            this.Controls.Add(this.num_count);
+            this.Controls.Add(this.num_price);
+            this.Controls.Add(this.lbl_count);
+            this.Controls.Add(this.lbl_price);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.inp_name);
             this.Controls.Add(this.label1);
             this.Name = "ProductForm";
             this.Text = "ProductForm";
             this.Load += new System.EventHandler(this.ProductForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.num_price)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_count)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,5 +133,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox inp_name;
         private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Label lbl_price;
+        private System.Windows.Forms.Label lbl_count;
+        private System.Windows.Forms.NumericUpDown num_price;
+        private System.Windows.Forms.NumericUpDown num_count;
     }
 }

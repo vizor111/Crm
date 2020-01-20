@@ -34,10 +34,17 @@ namespace Crm.UI
         {
             Product = new Product
             {
-                Name = inp_name.Text
+                Name = inp_name.Text,
+                Price = num_price.Value,
+                Count = (int)num_count.Value
             };
 
             Close();
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
