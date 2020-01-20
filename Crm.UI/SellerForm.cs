@@ -13,6 +13,13 @@ namespace Crm.UI
             InitializeComponent();
         }
 
+        public SellerForm(Seller seller) : this()
+        {
+            Seller = seller;
+
+            inp_name.Text = seller.Name;
+        }
+
         private void SellerForm_Load(object sender, EventArgs e)
         {
 
@@ -20,10 +27,8 @@ namespace Crm.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Seller = new Seller
-            {
-                Name = inp_name.Text
-            };
+            Seller = Seller ?? new Seller();
+            Seller.Name = inp_name.Text;
 
             Close();
         }

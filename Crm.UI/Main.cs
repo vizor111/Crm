@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 using Crm.BL.Model;
+using Crm.UI.Enums;
 
 namespace Crm.UI
 {
@@ -23,26 +24,26 @@ namespace Crm.UI
 
         private void customerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var customerCatalog = new Catalog<Seller>(_db.Sellers);
+            var customerCatalog = new Catalog<Customer>(_db.Customers, FormTypes.Customer);
             customerCatalog.Show();
         }
 
         private void productToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var productCatalog = new Catalog<Product>(_db.Products);
+            var productCatalog = new Catalog<Product>(_db.Products, FormTypes.Product);
 
             productCatalog.Show();
         }
 
         private void sellerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var sellerCatalog = new Catalog<Seller>(_db.Sellers);
+            var sellerCatalog = new Catalog<Seller>(_db.Sellers, FormTypes.Seller);
             sellerCatalog.Show();
         }
 
         private void checkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var checkCatalog = new Catalog<Seller>(_db.Sellers);
+            var checkCatalog = new Catalog<Seller>(_db.Sellers, FormTypes.Seller);
             checkCatalog.Show();
         }
 

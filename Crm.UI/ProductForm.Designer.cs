@@ -47,7 +47,6 @@
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // inp_name
             // 
@@ -59,6 +58,7 @@
             // btn_save
             // 
             this.btn_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_save.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btn_save.Location = new System.Drawing.Point(377, 328);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(75, 23);
@@ -97,7 +97,6 @@
             this.num_price.Name = "num_price";
             this.num_price.Size = new System.Drawing.Size(120, 20);
             this.num_price.TabIndex = 7;
-            this.num_price.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // num_count
             // 
